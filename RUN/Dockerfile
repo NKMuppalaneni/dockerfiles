@@ -1,3 +1,4 @@
 FROM almalinux:9
 RUN dnf install httpd -y
-RUN dnf enable httpd
+RUN systemctl start httpd
+RUN systemctl enable httpd
